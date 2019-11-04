@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>To Do List</title>
+
+<meta charset="UTF-8">
+<title>To Do List</title>
 
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous"/>
 <body>
 
 <div id="content">
+    <h1>To Do List</h1>
+    <h3>Add new item</h3>
+
+    <input id="create-item-from">
+        <label for="description-field"></label> Description: </label>
+        <input type="text" id="description-field" placeholder="Description">
+        <label type="date" id="deadline-field"> </label>
+
+        <input type="submit" id="submit-form"/>
+    </input>
+
     <table id="to-do-items">
         <thead>
         <tr>
@@ -24,23 +37,26 @@
             <td>Learn HTML</td>
             <td>04.11.2019</td>
             <td><input type="checkbox" class="mark-done"/></td>
-            <td><a href="#" class="delete-item">X</a></td>
+            <td><a href="#" class="delete-item"><i class="fas fa-trash-alt"></i></a></td>
         </tr>
         <tr>
             <td>Learn CSS</td>
             <td>04.11.2019</td>
             <td><input type="checkbox" class="mark-done"/></td>
-            <td><a href="#" class="delete-item">X</a></td>
+            <td><a href="#" class="delete-item"><i class="fas fa-trash-alt"></i></a></td>
         </tr>
         <tr>
             <td>Learn Javascript</td>
             <td>04.11.2019</td>
             <td><input type="checkbox" class="mark-done"/></td>
-            <td><a href="#" class="delete-item">X</a></td>
+            <td><a href="#" class="delete-item"><i class="fas fa-trash-alt"></i></a></td>
         </tr>
         </tbody>
     </table>
 </div>
+
+<script src="JS/lib/jquery-3.4.1.min.js"></script>
+<script src="JS/to-do-list.js"></script>
 
 </body>
 </html>
