@@ -8,19 +8,21 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
       integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous"/>
+<head>
 <body>
 
 <div id="content">
     <h1>To Do List</h1>
     <h3>Add new item</h3>
 
-    <input id="create-item-from">
+    <label id="create-item-from">
         <label for="description-field"></label> Description: </label>
         <input type="text" id="description-field" placeholder="Description">
-        <label type="date" id="deadline-field"> </label>
+        <input type="date" id="deadline-field">
+
 
         <input type="submit" id="submit-form"/>
-    </input>
+    </from>
 
     <table id="to-do-items">
         <thead>
@@ -37,7 +39,9 @@
             <td>Learn HTML</td>
             <td>04.11.2019</td>
             <td><input type="checkbox" class="mark-done"/></td>
-            <td><a href="#" class="delete-item"><i class="fas fa-trash-alt"></i></a></td>
+            <td><a href="#" class="delete-item">
+                <i class="fas fa-trash-alt"></i>
+            </a></td>
         </tr>
         <tr>
             <td>Learn CSS</td>
@@ -49,7 +53,9 @@
             <td>Learn Javascript</td>
             <td>04.11.2019</td>
             <td><input type="checkbox" class="mark-done"/></td>
-            <td><a href="#" class="delete-item"><i class="fas fa-trash-alt"></i></a></td>
+            <td><a href="#" class="delete-item">]
+                <i class="fas fa-trash-alt"></i>
+            </a></td>
         </tr>
         </tbody>
     </table>
